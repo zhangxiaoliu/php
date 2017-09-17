@@ -1,0 +1,15 @@
+<br />
+<b>Notice</b>:  Undefined property: Rain\Log\LogFilter::$_error in <b>/data/webroot/myzheng/src/Rain/ErrorHandler.php</b> on line <b>131</b><br />
+<br />
+<b>Notice</b>:  Undefined property: Rain\Log\LogFilter::$_error in <b>/data/webroot/myzheng/src/Rain/ErrorHandler.php</b> on line <b>141</b><br />
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title> Server Error</title>
+</head>
+<body>
+<h1> Server Error</h1>
+<p></p>
+</body>
+</html>
