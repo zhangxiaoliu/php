@@ -2,6 +2,7 @@
  * Created by Administrator on 2017/9/17.
  */
 window.onload = function () {
+    //头部导航栏样式切换
     var navbar = document.getElementById('navbar');
     navbar.addEventListener('click', function (e) {
         e = e || window.event;
@@ -21,7 +22,8 @@ window.onload = function () {
                          newClassName += ' ' + item;
                          }
                          });*/
-                        newClassName = curClassName.slice(0, k) + curClassName.slice(k + 6);
+                        //newClassName = curClassName.slice(0, k) + curClassName.slice(k + 6);
+                        newClassName = curClassName.replace(/\s*active/, '');
                     }
                     a[i].className = newClassName;
                 }
@@ -31,6 +33,48 @@ window.onload = function () {
             }
         }
     }, false);
+    //学员祝福图片切换
+    var studentsArr = [
+        {
+            url: './img/1.png',
+            wishers: '解放路实际付款了师傅的说法看见对方会计师1'
+        }, {
+            url: './img/2.png',
+            wishers: '解放路实际付款了师傅的说法看见对方会计师2'
+        }, {
+            url: './img/3.png',
+            wishers: '解放路实际付款了师傅的说法看见对方会计师3'
+        }, {
+            url: './img/8.png',
+            wishers: '解放路实际付款了师傅的说法看见对方会计师4'
+        }
+    ];
+    var img = blessing.getElementsByTagName('img')[0];
+    var span = blessing.getElementsByTagName('span')[0];
+    var index = 0, len = studentsArr.length;
+    //setInterval();
+    /*setInterval(function () {
+     if(index<len){
+     //img.setAttribute('src', studentsArr[index].url);
+     img.src=studentsArr[index].url;
+     span.innerText=studentsArr[index].wishers;
+     index++;
+     }else{
+     index=0;
+     }
+     }, 2000);*/
+    //setTimeout();
+    function Carousel(){
+        if (index < len) {
+            img.src=studentsArr[index].url;
+            span.innerText=studentsArr[index].wishers;
+            index++;
+        }else{
+            index=0;
+        }
+        setTimeout(arguments.callee,2000);
+    }
+    setTimeout(Carousel, 2000);
 };
 /**
  * jQuery实现navbar样式切换
