@@ -64,17 +64,42 @@ window.onload = function () {
      }
      }, 2000);*/
     //setTimeout();
-    function Carousel(){
+    function Carousel() {
         if (index < len) {
-            img.src=studentsArr[index].url;
-            span.innerText=studentsArr[index].wishers;
+            img.src = studentsArr[index].url;
+            span.innerText = studentsArr[index].wishers;
             index++;
-        }else{
-            index=0;
+        } else {
+            index = 0;
         }
-        setTimeout(arguments.callee,2000);
+        setTimeout(arguments.callee, 2000);
     }
+
     setTimeout(Carousel, 2000);
+
+    /**
+     * 侧边客服电话
+     */
+    var asideLeft = document.getElementById('asideLeft');
+    var isSpread = document.getElementById('isSpread');
+    var isFold = document.getElementById('isFold');
+    asideLeft.addEventListener('click', function (e) {
+        e = e || window.event;
+        var target = e.target || e.srcElement;
+        if (target.nodeType === 1 && target.nodeName === 'A') {
+            var id = target.id;
+            if (id === 'isSpread') {
+                //this->asideLeft
+                this.firstElementChild.style.display = 'none';
+                isFold.style.display = 'block';
+                asideRight.style.display = 'block';
+            } else if (id === 'isFold') {
+                this.lastElementChild.style.display = 'none';
+                isSpread.style.display = 'block';
+                asideRight.style.display = 'none';
+            }
+        }
+    }, false)
 };
 /**
  * jQuery实现navbar样式切换
