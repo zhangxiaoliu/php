@@ -1,7 +1,8 @@
 /**
  * Created by Administrator on 2017/9/17.
  */
-/*global window:true,document:true,setTimeout:true,$:true,jQuery:true*/
+/*global window:true,document:true,setTimeout:true,$:true*/
+/*jslint plusplus:true*/
 window.onload = function () {
     'use strict';
     //学员祝福图片切换
@@ -51,9 +52,9 @@ window.onload = function () {
     isFold = document.getElementById('isFold');
     asideLeft.addEventListener('click', function (e) {
         e = e || window.event;
-        var target = e.target || e.srcElement;
+        var target = e.target || e.srcElement, id;
         if (target.nodeType === 1 && target.nodeName === 'DIV') {
-            var id = target.id;
+            id = target.id;
             if (id === 'isSpread') {
                 //this->asideLeft
                 this.firstElementChild.style.display = 'none';
