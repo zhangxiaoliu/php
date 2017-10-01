@@ -64,7 +64,7 @@ window.onload = function () {
     asideLeft.addEventListener('click', function (e) {
         e = e || window.event;
         var target = e.target || e.srcElement;
-        if (target.nodeType === 1 && target.nodeName === 'A') {
+        if (target.nodeType === 1 && target.nodeName === 'DIV') {
             var id = target.id;
             if (id === 'isSpread') {
                 //this->asideLeft
