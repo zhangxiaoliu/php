@@ -38,18 +38,6 @@ window.onload = function () {
         span = blessing.getElementsByTagName('span')[0];
         index = 0;
         len = studentsArr.length;
-        //setInterval();
-        /*setInterval(function () {
-         if(index<len){
-         //img.setAttribute('src', studentsArr[index].url);
-         img.src=studentsArr[index].url;
-         span.innerText=studentsArr[index].wishers;
-         index++;
-         }else{
-         index=0;
-         }
-         }, 2000);*/
-        //setTimeout();
         setTimeout(carousel, 2000);
     }
 

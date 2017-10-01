@@ -253,6 +253,7 @@ footer {
 #footer .footRight {
     margin-top: 40px;
     text-align: center;
+    font-size: 14px;
 }
 
 .Carousel {
@@ -313,7 +314,8 @@ footer {
     line-height: 24px;
     padding: 5px;
 }
-#asideRight ul{
+
+#asideRight ul {
     padding: 0 0 0 8px;
 }
 
@@ -322,11 +324,13 @@ footer {
     line-height: 38px;
     border-bottom: 1px solid #E6E4E4;
 }
+
 #asideRight ul li:nth-child(2) {
     font-weight: bold;
     color: #f00;
 }
-#asideRight ul li:nth-child(3),#asideRight ul li:nth-child(4) {
+
+#asideRight ul li:nth-child(3), #asideRight ul li:nth-child(4) {
     font-weight: bold;
     color: #0070c0;
 }
@@ -335,18 +339,21 @@ footer {
     vertical-align: middle;
 }
 
-#asideRight dl dt{
+#asideRight dl dt {
     margin: 10px 0;
 }
-#asideRight dl dt img{
+
+#asideRight dl dt img {
     width: 132px;
     height: 132px;
 }
-#sina li a{
+
+#sina li a {
     text-decoration: underline;
     color: #00A0E9;
 }
-#sina li a:hover{
+
+#sina li a:hover {
     color: #ff8100;
     text-decoration: none;
 }
@@ -415,7 +422,8 @@ footer {
     margin-top: 15px;
     width: 100px;
 }
-.tabRight img{
+
+.tabRight img {
     margin-left: 20px;
 }
 
@@ -450,10 +458,12 @@ footer {
     height: 20px;
     line-height: 20px;
 }
+
 .tabRightInfo ul li:nth-child(6) {
     width: 150px;
 }
-.tabRightInfo ul a li{
+
+.tabRightInfo ul a li {
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -461,75 +471,89 @@ footer {
     margin-top: 10px;
     background-color: #d5494d;
 }
-#sectionOne{
+
+#sectionOne {
     width: 100%;
     background-color: #f0f0f0;
 }
 
-#sectionOne img{
+#sectionOne img {
     width: 800px;
     height: 512px;
     margin: 0 auto;
     display: block;
 }
-#sectionTwo{
+
+#sectionTwo {
     width: 100%;
     background-color: #045690;
 }
-#sectionTwo img{
+
+#sectionTwo img {
     width: 800px;
     height: 600px;
     margin: 0 auto;
     display: block;
 }
-#sectionThree{
+
+#sectionThree {
     width: 100%;
     background-color: #f8f8f8;
 }
-#sectionThree img{
+
+#sectionThree img {
     width: 800px;
     height: 500px;
     margin: 0 auto;
     display: block;
 }
-#features{
+
+#features {
     width: 100%;
     text-align: center;
 }
-.featuresTitle{
+
+.featuresTitle {
     width: 83%;
     margin: 0 auto;
     height: 150px;
 }
-.featuresTitle h1{
+
+.featuresTitle h1 {
     margin: 32px auto 20px;
 }
-.featureContent{
+
+.featureContent {
     width: 1000px;
     margin: 0 auto;
     height: 696px;
 }
-.featureContent ul li{
+
+.featureContent ul li {
     width: 320px;
     height: 220px;
     margin-left: 5px;
     margin-top: 5px;
     float: left;
 }
-.featureContent ul li img{
+
+.featureContent ul li img {
     width: 320px;
     height: 220px;
 }
-#teachers{
+
+#teachers {
     width: 100%;
     text-align: center;
 }
-.teachersTitle, .practicalTitle{
+
+.teachersTitle, .practicalTitle {
     width: 1000px;
     height: 100px;
     margin: 0 auto;
 }
-.teachersTitle span, .practicalTitle span{
+
+.teachersTitle span, .practicalTitle span {
     display: block;
     height: 50px;
     width: 400px;
@@ -540,19 +564,23 @@ footer {
     color: #035791;
     text-align: center;
 }
-.teachersContent img{
+
+.teachersContent img {
     width: 759px;
     height: 500px;
 }
-#practicalSys{
+
+#practicalSys {
     width: 100%;
     margin-bottom: 80px;
 }
-#details{
+
+#details {
     width: 759px;
     margin: 0 auto;
 }
-#details dl dt{
+
+#details dl dt {
     height: 50px;
     line-height: 50px;
     font-size: 18px;
@@ -561,11 +589,82 @@ footer {
     padding-left: 24px;
     margin-bottom: 3px;
 }
-#details dl dd{
+
+#details dl dd {
     height: 40px;
     line-height: 40px;
     font-size: 18px;
     background: #dbdbdb;
     padding-left: 60px;
     margin-bottom: 3px;
+}
+
+#faculty {
+    width: 100%;
+    text-align: center;
+    background: #000;
+}
+
+#faculty img {
+    width: 83%;
+    height: 400px;
+}
+
+#main {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#mainTitle {
+    width: 100%;
+    text-align: center;
+    height: 160px;
+}
+
+#mainTitle p {
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #005bb9;
+}
+
+#mainTitle span {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666666;
+}
+
+#mainContent ul li {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    color: #666666;
+    text-align: center;
+}
+
+#mainContent ul li img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+}
+
+.professor {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.professor span {
+    display: block;
+    font-size: 14px;
+}
+
+.professor p {
+    margin-top: 20px;
+    line-height: 1.5em;
 }
